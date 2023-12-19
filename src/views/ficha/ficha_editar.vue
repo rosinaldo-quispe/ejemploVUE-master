@@ -3,6 +3,8 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
+                    <h1>Sociedad General de Cirujanos de Peru</h1>
+                    <h2>TRABAJO FINAL</h2>
                     <div class="mb-3">
                         <label class="form-label">nombre</label>
                         <input v-model="ficha.nombre" type="text" class="form-control">
@@ -24,12 +26,24 @@
                         <input v-model="ficha.LOCALIDAD" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
+                        <label class="form-label">C.P</label>
+                        <input v-model="ficha.CP" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label">PROVINCIA</label>
                         <input v-model="ficha.PROVINCIA" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
+                        <label class="form-label">TELEFONO</label>
+                        <input v-model="ficha.TELEFONO" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
                         <label class="form-label">FECHA DE NACIMIENTO</label>
                         <input v-model="ficha.FECHADENACIMIENTO" type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">EDAD</label>
+                        <input v-model="ficha.EDAD" type="text" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">CURSO</label>
@@ -64,8 +78,11 @@ export default defineComponent({
                 DNI: '',
                 DOMICILIO: '',
                 LOCALIDAD: '',
+                CP: '',
                 PROVINCIA: '',
+                TELEFONO: '',
                 FECHADENACIMIENTO: '',
+                EDAD: '',
                 CURSO: '',
                 TUTORA: '',
                
